@@ -1,10 +1,12 @@
 package com.example.demo.pojo;
 
-public class linkman {
+public class Linkman {
     //联系人Id
-    private int investorId;
+    private String investorId;
     //联系人名称
     private String lmNmae;
+    //职位
+    private String lmPost;
     //联系人电话
     private String lmPhone;
     //联系人电子邮件
@@ -12,12 +14,12 @@ public class linkman {
     //备注
     private String lmRemake;
 
-    public int getInverstorId() {
+    public String getInvestorId() {
         return investorId;
     }
 
-    public void setInverstorId(int inverstorId) {
-        this.investorId = inverstorId;
+    public void setInvestorId(String investorId) {
+        this.investorId = investorId;
     }
 
     public String getLmNmae() {
@@ -26,6 +28,14 @@ public class linkman {
 
     public void setLmNmae(String lmNmae) {
         this.lmNmae = lmNmae;
+    }
+
+    public String getLmPost() {
+        return lmPost;
+    }
+
+    public void setLmPost(String lmPost) {
+        this.lmPost = lmPost;
     }
 
     public String getLmPhone() {
@@ -52,12 +62,13 @@ public class linkman {
         this.lmRemake = lmRemake;
     }
 
-    public linkman() {
+    public Linkman() {
     }
 
-    public linkman(int inverstorId, String lmNmae, String lmPhone, String lmEmail, String lmRemake) {
-        this.investorId = inverstorId;
+    public Linkman(String investorId, String lmNmae, String lmPost, String lmPhone, String lmEmail, String lmRemake) {
+        this.investorId = investorId;
         this.lmNmae = lmNmae;
+        this.lmPost = lmPost;
         this.lmPhone = lmPhone;
         this.lmEmail = lmEmail;
         this.lmRemake = lmRemake;
@@ -65,9 +76,10 @@ public class linkman {
 
     @Override
     public String toString() {
-        return "linkman{" +
-                "inverstorId=" + investorId +
+        return "Linkman{" +
+                "investorId='" + investorId + '\'' +
                 ", lmNmae='" + lmNmae + '\'' +
+                ", lmPost='" + lmPost + '\'' +
                 ", lmPhone='" + lmPhone + '\'' +
                 ", lmEmail='" + lmEmail + '\'' +
                 ", lmRemake='" + lmRemake + '\'' +

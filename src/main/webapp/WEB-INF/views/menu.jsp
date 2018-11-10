@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>
-        <?php echo $curTitle;?>
+        CRM管理系统
     </title>
     <link rel="stylesheet" href="../layui/css/layui.css">
 </head>
@@ -36,11 +36,11 @@
                     <a class="" href="javascript:;">资方管理</a>
                     <dl class="layui-nav-child">
                         <dd>
-                            <a href="javascript:;" data-id="1" data-title="资方开户" data-url="hello?&a=adminList" class="site-demo-active"
+                            <a href="javascript:;" data-id="1" data-title="资方开户" data-url="router?path=investor&fileName=add&a=adminList" class="site-demo-active"
                                data-type="tabAdd">资方开户</a></dd>
                         <dd><a href="javascript:;" data-id="2" data-title="管理员日志" data-url="listStudent?&a=adminLogList" class="site-demo-active"
                                data-type="tabAdd">管理员日志</a></dd>
-                        <dd><a href="javascript:;" data-id="3" data-title="测试" data-url="test1?&a=adminList" class="site-demo-active"
+                        <dd><a href="javascript:;" data-id="3" data-title="测试" data-url="router?path=investor&fileName=hello&a=adminList" class="site-demo-active"
                                data-type="tabAdd">测试</a></dd>
 
                     </dl>
@@ -67,14 +67,14 @@
     </div>
 
     <!--tab标签-->
-    <div class="layui-tab" lay-filter="demo" lay-allowclose="true" style="margin-left: 200px;">
+    <div class="layui-tab" lay-filter="demo" lay-allowclose="true" style="margin-left: 200px; margin-bottom: 200px; ">
         <ul class="layui-tab-title"></ul>
         <div class="layui-tab-content"></div>
     </div>
 
     <div class="layui-footer" style="text-align:center;">
         <!-- 底部固定区域 -->
-        © sunway.tk XXXX业务管理平台
+        © sunway.tk CRM管理平台
     </div>
 </div>
 <script src="../layui/layui.js"></script>

@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Investor {
     //资方ID
-    private int investorId;
+    private String investorId;
     //资方名称
     private String investorName;
     //资方简称
@@ -17,13 +17,13 @@ public class Investor {
     //证件号码
     private String idNumber;
     //营业起始日
-    private Date openingDate;
+    private String openingDate;
     //营业到期日
-    private Date expirationDate;
+    private String expirationDate;
     //合作开始日
-    private Date startDate;
+    private String startDate;
     //合作到期日
-    private Date endDate;
+    private String endDate;
     //电子邮件
     private String emaile;
     //注册资金(万美金)
@@ -33,11 +33,11 @@ public class Investor {
     //注册地址
     private String registeredAddress;
 
-    public int getInvestorId() {
+    public String getInvestorId() {
         return investorId;
     }
 
-    public void setInvestorId(int investorId) {
+    public void setInvestorId(String investorId) {
         this.investorId = investorId;
     }
 
@@ -81,35 +81,35 @@ public class Investor {
         this.idNumber = idNumber;
     }
 
-    public Date getOpeningDate() {
+    public String getOpeningDate() {
         return openingDate;
     }
 
-    public void setOpeningDate(Date openingDate) {
+    public void setOpeningDate(String openingDate) {
         this.openingDate = openingDate;
     }
 
-    public Date getExpirationDate() {
+    public String getExpirationDate() {
         return expirationDate;
     }
 
-    public void setExpirationDate(Date expirationDate) {
+    public void setExpirationDate(String expirationDate) {
         this.expirationDate = expirationDate;
     }
 
-    public Date getStartDate() {
+    public String getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(Date startDate) {
+    public void setStartDate(String startDate) {
         this.startDate = startDate;
     }
 
-    public Date getEndDate() {
+    public String getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Date endDate) {
+    public void setEndDate(String endDate) {
         this.endDate = endDate;
     }
 
@@ -145,10 +145,7 @@ public class Investor {
         this.registeredAddress = registeredAddress;
     }
 
-    public Investor() {
-    }
-
-    public Investor(int investorId, String investorName, String investorShortName, String type, String documentType, String idNumber, Date openingDate, Date expirationDate, Date startDate, Date endDate, String emaile, String initialFunding, String legalPerson, String registeredAddress) {
+    public Investor( String investorId, String investorName, String investorShortName, String type, String documentType, String idNumber, String openingDate, String expirationDate, String startDate, String endDate, String emaile, String initialFunding, String legalPerson, String registeredAddress) {
         this.investorId = investorId;
         this.investorName = investorName;
         this.investorShortName = investorShortName;
@@ -163,6 +160,9 @@ public class Investor {
         this.initialFunding = initialFunding;
         this.legalPerson = legalPerson;
         this.registeredAddress = registeredAddress;
+    }
+
+    public Investor() {
     }
 
     @Override
